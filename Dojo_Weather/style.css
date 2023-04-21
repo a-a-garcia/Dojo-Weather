@@ -1,0 +1,137 @@
+/*universal styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Delicious Handrawn', cursive;;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#header, #current-city, #weather-cards {
+    margin-bottom: 2.5%;
+}
+
+#header, #cities, #current-city, #show-temp, #weather-cards, .weather-card, #cookie-policy{
+    display: flex;
+    align-items: center;
+}
+
+#cities, #current-city, #show-temp, #weather-cards {
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 64px;
+    width: 30%;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3, button {
+    font-size: 36px;
+}
+
+select, .day-degrees, .night-degrees {
+    font-size: 28px;
+}
+
+.day-temp {
+    color: rgb(24, 190, 255);
+    display: flex;
+    align-items: center;
+}
+
+.night-temp {
+    color: midnightblue;
+    display: flex;
+    align-items: center;
+}
+
+/*header*/
+
+#header {
+    height: 20%;
+    background-color: rgb(100, 177, 255);
+    color: white;
+    justify-content: space-around;
+    height: 125px;
+}
+
+#cities {
+    width: 30%;
+}
+
+#cities h2:hover {
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#cities h2:active {
+    color: blue;
+}
+
+
+/*main section*/
+/*temp change section*/
+
+#current-city {
+    border-bottom: 5px solid;
+    padding-bottom: 25px;
+}
+
+#show-temp h3 {
+    margin-left: -5%;
+}
+
+/*weather card section*/
+
+.weather-card {
+    height: 600px;
+    width: 300px;
+    justify-content: space-evenly;
+    padding: 1%;
+    flex-direction: column;
+    background-color: lightgray;
+}
+
+.weather-card img {
+    width: 75%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-between;
+    width: 60%
+}
+
+/*cookie policy*/
+#cookie-policy {
+    padding: 2%;
+    border: 5px solid;
+    justify-content: space-between;
+}
+
+#cookie-text {
+    width: 80%;
+}
+
+button {
+    padding: 0.5% 1%;
+    border: 5px solid black;
+    box-shadow: 5px 5px 5px black;
+    background-color:rgb(100, 177, 255);
+    color: white;
+}
+
+button:active {
+    background-color: rgb(61, 112, 163);
+}
